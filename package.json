@@ -1,0 +1,20 @@
+{
+  "name": "strip-wayback-toolbar",
+  "description": "Strip wayback toolbar from archived html",
+  "author": "John Otander",
+  "version": "0.1.0",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "ava -v"
+  },
+  "repository": "johnotander/strip-wayback-toolbar",
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "*"
+  }
+}
