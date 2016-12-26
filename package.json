@@ -11,7 +11,12 @@
     "test": "ava -v"
   },
   "repository": "johnotander/strip-wayback-toolbar",
-  "keywords": [],
+  "keywords": [
+    "html",
+    "strip",
+    "wayback",
+    "archive"
+  ],
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
