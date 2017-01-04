@@ -9,7 +9,6 @@ module.exports = html => {
     .replace(jsRegex, '')
     .replace(cssRegex, '')
     .replace(toolbarRegex, '')
-  return true
 }
 
 const jsRegex = /<script type="text\/javascript" src="\/static\/js\/analytics.js"><\/script>/
