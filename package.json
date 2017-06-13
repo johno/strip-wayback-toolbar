@@ -2,7 +2,7 @@
   "name": "strip-wayback-toolbar",
   "description": "Strip wayback toolbar from archived html",
   "author": "John Otander",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "files": [
     "index.js"
