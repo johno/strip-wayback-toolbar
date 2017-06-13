@@ -6,11 +6,9 @@ module.exports = html => {
   }
 
   return html
-    .replace(jsRegex, '')
-    .replace(cssRegex, '')
+    .replace(assetRegex, '<head>')
     .replace(toolbarRegex, '')
 }
 
-const jsRegex = /<script type="text\/javascript" src="\/static\/js\/analytics.js"><\/script>/
-const cssRegex = /<link type="text\/css" rel="stylesheet" href="\/static\/css\/banner-styles.css"\/>/
+const assetRegex = /<head>((.|\n)*)<\!-- End Wayback Rewrite JS Include -->/
 const toolbarRegex = /<\!-- BEGIN WAYBACK TOOLBAR INSERT -->((.|\n)*)<\!-- END WAYBACK TOOLBAR INSERT -->/

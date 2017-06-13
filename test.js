@@ -7,13 +7,16 @@ const html = fs.readFileSync('./fixture.html', 'utf8')
 test('it strips the js', t => {
   const result = stripWaybackToolbar(html)
 
-  t.notRegex(result, /src="\/static\/js\/analytics\.js"/)
+  t.is(result.indexOf('analytics.js?v='), -1)
 })
 
 test('it strips the stylesheet', t => {
+  t.plan(2)
+
   const result = stripWaybackToolbar(html)
 
-  t.notRegex(result, /href="\/static\/css\/banner-styles\.css"/)
+  t.is(result.indexOf('banner-styles.css'), -1)
+  t.is(result.indexOf('iconochive'), -1)
 })
 
 test('it strips the toolbar', t => {
